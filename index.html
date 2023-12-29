@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>CCXP</title>
+
+</head>
+<body>
+    <div id="higher">
+        <img src="IMG/Logo.svg" width="200">
+    </div>
+
+    <div class="container">
+        <div id="section">
+            <h1 id="title"> 
+                REVIVA O ÉPICO </h1><br>
+
+            <h1 id="text1"> 
+                DE 01 A 04 DE DEZEMBRO </h1><br><br>
+
+            <p id="text2">
+                Você consegue sentir? É aquela sensação de <br>
+                finalmente poder falar em voz alta: "estamos <br>
+                em casa". Sim, em dezembro de 2022, <br>
+                teremos a volta da CCXP física. Mas não será <br>
+                qualquer CCXP, vai ser a maior de todos os <br>
+                tempos. Prepare-se para visitar seus <br>
+                universos favoritos, explorar o Artists' Valley, <br>
+                se emocionar nos auditórios e encontrar <br>
+                aventuras épicas a cada passo pelos nossos <br>
+                corredores.</p>
+        </div>  
+        
+        <div>          
+            <div id="timer">
+                <div>
+                    <h1 id="dia"> 00 </h1>
+                </div>
+                <div id="letterD"> D </div>
+                <div>
+                    <h1 id="hora"> 00 </h1>
+                </div>
+                <div class="letter"> H </div>
+                <div>
+                    <h1 id="minuto"> 00 </h1>
+                </div>
+                <div class="letter"> M </div>
+                <div>
+                    <h1 id="segundo"> 00 </h1>
+                </div>
+                <div class="letter"> S </div>
+            </div>
+
+                <h1 id="textVideo"> PARA A MAIOR CCXP DE TODOS OS TEMPOS </h1>
+
+                <video autoplay id="video" width="850px" controls loop ><source src="Video/Arlequina.mp4" type="video/mp4"></video>
+        </div> 
+    </div>
+
+    <div id="baseboard">
+        <h1 id="textBottom"> AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE! </h1>
+              
+        <div class="cards">
+            <img class="cardsIngresso" src="IMG/quinta.svg" onclick="selectCard('#quinta')" onmouseover="highLightCard('quinta')" onmouseout="highLightCard('quinta')" id="quinta">
+            <img class="cardsIngresso" src="IMG/sexta.svg" onclick="selectCard('#sexta')" onmouseover="highLightCard('sexta')" onmouseout="highLightCard('sexta')" id="sexta">
+            <img class="cardsIngresso" src="IMG/sabado.svg" onclick="selectCard('#sabado')" onmouseover="highLightCard('sabado')" onmouseout="highLightCard('sabado')" id="sabado">
+            <img class="cardsIngresso" src="IMG/domingo.svg" onclick="selectCard('#domingo')" onmouseover="highLightCard('domingo')" onmouseout="highLightCard('domingo')" id="domingo"><br>
+
+            <button id="button" onclick="showSelectedCards()"> GARANTA O SEU! </button>
+
+        </div>   
+    </div> 
+
+    <div id="register">
+        <form action="http://www.google.com">
+            <input id="campoemail" type="email" placeholder="Seu email" required />
+            <input id="botaoemail" type="submit"/>
+        </form>
+    </div>
+                     
+
+    <script src="countDown.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

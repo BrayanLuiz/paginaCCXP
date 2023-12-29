@@ -1,0 +1,249 @@
+:root{
+    /* background-color */
+    --amareloBack: #FFD900;
+    --roxo: #514988;
+
+    /* fontes */
+    --amareloFonte: #F3C61F;
+    --rosaFonte: #E33881;
+    --bcoFont: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#higher{
+    background-color: var(--amareloBack);
+    padding: 30px;
+}
+
+.container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    padding: 0;
+}
+
+#section{
+    background-color: var(--roxo);
+    color: var(--bcoFont);
+    width: 900px;
+    height: 630px;
+    padding: 60px 90px 20px 0px;
+    text-align: center;
+}
+
+#title{
+    font-size: 65px;
+    color: var(--amareloFonte);
+}
+
+#text1{
+    font-size: 30px;
+}
+
+#text2{
+    font-size: 26px;
+    margin-top: 25px;
+}
+
+#timer{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    padding: 30px 0px 0px 5px;
+    color: var(--roxo);
+    margin-left: 40px;
+    font-size: 43px;
+}
+.letter{
+    color: var(--roxo);
+    font-size: 85px;
+    font-weight: bolder;
+    margin-left: -7px;
+}
+
+#letterD{
+    color: var(--roxo);
+    font-size: 85px;
+    font-weight: bolder;
+    margin-left: -45px;
+}
+
+#textVideo{
+    color: var(--rosaFonte);
+    font-size: 33px;
+    margin-left: 34px;
+    padding: 30px 0px 30px 20px;
+}
+
+#video{
+    margin-left: 40px;
+}
+
+#textBottom{
+    font-size: 33px;
+    margin-left: 34px;
+    padding: 50px 0px 50px 20px;
+    color: var(--amareloFonte);
+}
+
+.cards{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    
+}
+
+.card-highLight{
+    box-shadow: 10px 10px 15px 5px #514988;
+}
+.cardSelected{
+    border: 5px solid var(--amareloBack);
+}
+
+#button{
+    color: var(--bcoFont);
+    background-color: var(--roxo);
+    border: 0;
+    border-radius: 20px;
+    margin: 40px -400px 40px 40px;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+
+
+#button:hover{
+    transform: translateY(-3px);
+    transition-duration: 0.5s;
+    color: var(--amareloFonte);
+    transform: translateY(-3px);
+    box-shadow: 0px 15px 20px #01030a81;
+    transition-duration: 0.5s;
+}
+
+#register{
+    background-color: var(--amareloBack);
+    padding: 50px;
+    align-items: center;
+}
+
+#campoemail{
+    border: 1px solid var(--roxo);
+    border-radius: 10px;
+    margin: 50px 50px 50px 50px;
+    padding: 15px 200px 10px 20px;
+    color: var(--roxo);
+    background-color: var(--bcoFont);
+}
+form input::placeholder{
+    color: var(--roxo);
+    font-size: 18px;    
+}
+
+#botaoemail{
+    color: var(--bcoFont);
+    background-color: var(--roxo);
+    border: 0px;
+    border-radius: 18px;
+    margin: -20px;
+    font-size: 20px;
+    padding: 10px 60px 10px 60px;
+}
+#botaoemail:hover{
+    transform: translateY(-1px);
+    transition-duration: 0.3s;
+    color: var(--amareloFonte);
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 5px #01030a81;
+    transition-duration: 0.5s;
+}
+
+
+@media only screen and (max-width: 600px){
+    *{inset: 0;}
+    
+    #higher{
+    
+        width: 800px;
+    
+    }
+    
+    .container{
+       display: grid;
+       grid-auto-flow: row;  
+    }
+    
+    #section{
+        width: 770px;
+        height: 600px;
+      
+    }
+
+    #title{
+        margin-left: 80px;
+    }
+    
+    #text1{
+        font-size: 33px;
+        margin-left: 80px;
+    }
+    
+    #text2{
+        font-size: 30px;
+        margin-left: 80px;
+    }
+    
+    .timer{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+       
+    }
+    
+    .letter{
+        margin-left: -7px;
+    }
+    
+    #letterD{
+        margin-left: -35px;
+    }
+    
+    #textVideo{
+        margin-left: 5px;
+    }
+    
+    #video{
+        margin-left: 5px;
+    }  
+      
+    #baseboard{
+        inset: 0;   
+    }
+
+    #textBottom{
+        padding: 30px 0px 30px 20px ;
+        align-items: center;
+    }
+
+.cards{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        margin-left: 25px;
+}
+
+#button{
+    margin: 80px 180px;
+    align-items: center;
+    padding: 50px 0px 50px 20px;
+}
+}
